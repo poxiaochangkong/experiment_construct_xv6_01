@@ -21,7 +21,7 @@ void
 start()
 {
   // 在进入main函数前，清零BSS段
-  memset(sbss, 0, ebss - sbss);
+  memset(sbss, 1, ebss - sbss);
  
   main();
 
